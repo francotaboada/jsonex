@@ -25,6 +25,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Compile Test
-      run: mvn test-compile -pl jsoncoder -am
+      run: mvn test-compile -pl JSONCoder -am
     - name: First Test
       run: mvn -pl jsoncoder test -Dtest=org.jsonex.jsoncoder.JSONCoderTest#testEnumNameOption
